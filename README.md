@@ -4,6 +4,7 @@
 - [Requirements](#requirements)
 - [Setup](#setup)
 - [Delieverables](#deliverables)
+- [Best Practices](#best-practices)
 
 ## General Information
 Welcome to the eDKP 2025 hackathon.  
@@ -13,14 +14,17 @@ This guide will help you get up and running quickly so you can get started hacki
 1. At least 1 person in your team must bring a laptop that:  
 i. has Python3 installed, and is able to run Python code in your IDE of choice  
 ii. is able to access Github ([link](https://github.com/))
-2. Your laptop **MUST** be able to access OpenHands Cloud ([link](https://app.all-hands.dev/))
+2. Your own laptop **MUST** be able to access OpenHands Cloud ([link](https://app.all-hands.dev/))
+3. If your usecase requires data, either:  
+i. prepare (eg. mask / anonymize) and bring your own data, OR  
+ii. if you need news data, inform us and we will provide you with a Tavily API key ([ref](#3-tavily-for-news-related-team-only))
 
 ## Setup
 Follow the setup steps in this order:
 ### 1. Github
 Github is a platform to share code for collaborative development.
 1. Navigate to Github, specifically the page for eDKP2025 ([link](https://github.com/edkp-2025/))
-2. Sign in with the login credentials provided to you (TBC)
+2. Sign in with the login credentials provided to you.
 3. One person in your team must create your team's Github repository.  
 i. First navigate to the hackathon's Github organization. Click onto your profile icon on the top right corner, and select "Organizations".  
 ![Navigate to Github Organizations](assets/images/readme-github-newrepo1.png)  
