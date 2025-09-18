@@ -12,18 +12,18 @@ This guide will help you get up and running quickly so you can get started hacki
 
 ## Requirements
 1. At least 1 person in your team must bring a laptop that:  
-i. has Python3 installed, and is able to run Python code in your IDE of choice  
-ii. is able to access Github ([link](https://github.com/))
+i. has Python3 installed, and is able to run Python code in your IDE of choice.  
+ii. is able to access Github. ([link](https://github.com/))
 2. Your own laptop **MUST** be able to access OpenHands Cloud ([link](https://app.all-hands.dev/))
-3. If your usecase requires data, either:  
-i. prepare (eg. mask / anonymize) and bring your own data, OR  
-ii. if you need news data, inform us and we will provide you with a Tavily API key ([ref](#3-tavily-for-news-related-team-only))
+3. If your usecase requires data, please bring either of the following:  
+i. Prepare (eg. mask / anonymize) and bring your own data.  
+ii. If you need news data, inform us and we will provide you with a Tavily API key. ([ref](#3-tavily-for-news-related-team-only))
 
 ## Setup
 Follow the setup steps in this order:
 ### 1. Github
 Github is a platform to share code for collaborative development.
-1. Navigate to Github, specifically the page for eDKP2025 ([link](https://github.com/edkp-2025/))
+1. Navigate to Github, specifically the page for eDKP2025. ([link](https://github.com/edkp-2025/))
 2. Sign in with the login credentials provided to you.
 3. One person in your team must create your team's Github repository.  
 i. First navigate to the hackathon's Github organization. Click onto your profile icon on the top right corner, and select "Organizations".  
@@ -38,8 +38,8 @@ iii. Refer to the official [docs](https://docs.github.com/en/repositories/creati
 
 ### 2. OpenHands Cloud
 OpenHands Cloud is a low to no-code AI-assisted coding platform that is accessible as a webapp in your browser. It is integrated tightly with Github, which allows it to seamlessly build your code and merge it to your Github repository.
-1. Navigate to OpenHands Cloud ([link](https://app.all-hands.dev/))
-2. Sign in with the Github login credentials provided to you (TBC)
+1. Navigate to OpenHands Cloud. ([link](https://app.all-hands.dev/))
+2. Sign in with the Github login credentials provided to you.  
 3. There may be a pop-up to grant OpenHands permissions to access the Github account. Click on the 'Authorize' button.  
 ![Initial login Github authorization](assets/images/readme-openhands-authgithub.png)
 4. If there is a pop-up to accept terms of service, accept it.
@@ -59,6 +59,11 @@ Tavily is a tool that enables search and extraction of web content, typically fo
 Please reach out to your facilitator for the API key.
 
 > ℹ️ For information on how to use Tavily, please refer to the official [docs](https://docs.tavily.com/documentation/api-reference/endpoint/search).
+
+## Recommended Stacks
+1. Python: FastAPI backend + Streamlit frontend 
+2. Javascript: Next.js
+> ⚠️ Javascript may not have all the same ML / NLP libraries in Python.  
 
 ## Deliverables
 1. Final presentation.
@@ -85,7 +90,9 @@ Please reach out to your facilitator for the API key.
         class A,B,C,D,E,F,K,L git
         class G,H,I,J github
     ```
-- However, for a low to no-code experience using Github + OpenHands Cloud, you may opt to simply create your branches from the Github webpage:   
+- However, for a low to no-code experience using Github + OpenHands Cloud, you may opt to:
+1. Work off your 'main' branch in OpenHands, **BUT** remember to use the OpenHands agent's 'Push & Create PR' tool which will automatically create a new feature branch for you ([ref](#vibe-coding-using--openhands-cloud)).
+2. Create a new branch from the Github webpage:   
 i. Click on the drop-down under your repository's name that either has 'main' / 'master' (this is your branch selector), then type the name of your new branch to create it.  
 ![Create Github branch](assets/images/readme-bestpractices-github.png)  
 ii. Head back to OpenHands Cloud and choose your feature branch from the repository and branch drop-down selectors.
@@ -107,5 +114,6 @@ iii. instruction to **NOT** return any code - just return the plan alone.
 iv. clarify with you at any step if unsure.  
 v. (optional) create test cases to test key functionalities.
 2. After the plan is created and is within your chat history, go ahead and tell OpenHands to execute the plan. You may opt to tell it not to overcomplicate things and keep code logic as simple as possible.
-3. When the code looks good get OpenHands to run the tests. Refactor / Fix the code where necessary.
-4. Ask OpenHands to create a Pull Request. You can review this on Github under your repository's 'Pull Requests' tab.
+3. You can review the code generated under the 'Changes' tab in OpenHands - changes are organized by the files they are written in. Thereafter, you can get OpenHands to run unit / integration tests, and fix any bugs.
+4. Either click on the options in your OpenHands chat to 'Push & Create PR' as shown below, or explicitly ask OpenHands to do so. You can review this on Github under your repository's 'Pull Requests' tab.  
+![Push and Merge](assets/images/readme-bestpractices-openhands1.png) 
