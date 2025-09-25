@@ -133,7 +133,7 @@ v. (optional) create test cases to test key functionalities.
 2. After the plan is created and is within your chat history, go ahead and tell OpenHands to execute the plan. You may opt to tell it not to overcomplicate things and keep code logic as simple as possible.
 3. You can review the code generated under the 'Changes' tab in OpenHands - changes are organized by the files they are written in. Thereafter, you can get OpenHands to run unit / integration tests, and fix any bugs.
 4. Save your work frequently using the 'Push' and 'Pull Request' buttons at the bottom of your chatbox:  
-<img src="assets/images/readme-openhands-pushmerge.png">  
+    <img src="assets/images/readme-openhands-pushmerge.png">  
 
     i. Push: Do this after you are satisfied with every minor change done to your feature branch.  
     ii. Pull Request: Do this after you are satisfied with your entire feaure branch. You will have to head to your team's repository on Github, click on the 'Pull Request' tab, and approve your pull request to merge your feature branch into the 'main / master' branch. Refer to the 'Git / Github workflow' video under the ['Collaborating using Github'](#best-practices) section for more information on pull requests.
