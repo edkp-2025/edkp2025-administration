@@ -11,10 +11,8 @@ Welcome to the eDKP 2025 hackathon.
 This guide will help you get up and running quickly so you can get started hacking.
 
 ## Requirements
-1. At least 1 person in your team must bring a laptop that:  
-i. has Python3 installed, and is able to run Python code in your IDE of choice.  
-ii. is able to access Github. ([link](https://github.com/))
-2. Your own laptop **MUST** be able to access OpenHands Cloud ([link](https://app.all-hands.dev/))
+1. At least 1 person in your team must bring a laptop that has Python3 installed, and is able to run Python code in your IDE of choice.  
+2. Your own laptop **MUST** be able to access OpenHands Cloud ([link](https://app.all-hands.dev/)) and Github ([link](https://github.com/)).
 3. If your usecase requires data, please bring either of the following:  
 i. Prepare (eg. mask / anonymize) and bring your own data.  
 ii. If you need news data, inform us and we will provide you with a Tavily API key. ([ref](#3-tavily-for-news-related-team-only))
@@ -39,7 +37,7 @@ Your team repositories have been prepared for you beforehand. Check that you are
 6. Create different feature branches per member (this helps to manage conflicts when writing to the same files):   
 i. Click on the drop-down under your repository's name that either has 'main' / 'master' (this is your branch selector).  
 ii. Type the name of your new branch to create it.  
-![Create Github branch](assets/images/readme-bestpractices-github.png)  
+<img src="assets/images/readme-bestpractices-github.png">  
 
 > ⚠️ **DO NOT** create more than 1 repo per team  
 
@@ -134,7 +132,8 @@ v. (optional) create test cases to test key functionalities.
     ```
 2. After the plan is created and is within your chat history, go ahead and tell OpenHands to execute the plan. You may opt to tell it not to overcomplicate things and keep code logic as simple as possible.
 3. You can review the code generated under the 'Changes' tab in OpenHands - changes are organized by the files they are written in. Thereafter, you can get OpenHands to run unit / integration tests, and fix any bugs.
-4. Save your work frequently using the 'Push' and 'Pull Request' buttons at the bottom of your chatbox:
+4. Save your work frequently using the 'Push' and 'Pull Request' buttons at the bottom of your chatbox:  
 <img src="assets/images/readme-openhands-pushmerge.png">  
-i. Push: Do this after you are satisfied with every minor change done to your feature branch.  
-ii. Pull Request: Do this after you are satisfied with your entire feaure branch. You will have to head to your team's repository on Github, click on the 'Pull Request' tab, and approve your pull request to merge your feature branch into the 'main / master' branch. Refer to the 'Git / Github workflow' video under the ['Collaborating using Github'](#best-practices) section for more information on pull requests.
+
+    i. Push: Do this after you are satisfied with every minor change done to your feature branch.  
+    ii. Pull Request: Do this after you are satisfied with your entire feaure branch. You will have to head to your team's repository on Github, click on the 'Pull Request' tab, and approve your pull request to merge your feature branch into the 'main / master' branch. Refer to the 'Git / Github workflow' video under the ['Collaborating using Github'](#best-practices) section for more information on pull requests.
