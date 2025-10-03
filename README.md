@@ -2,7 +2,9 @@
 
 ## Table of Contents
 - [Requirements](#requirements)
+- [Constraints](#constraints)
 - [Setup](#setup)
+- [Recommended Stacks](#recommended-stacks)
 - [Delieverables](#deliverables)
 - [Best Practices](#best-practices)
 
