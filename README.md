@@ -27,14 +27,16 @@ Follow the setup steps in this order:
 ### 1. Github
 Github is a platform to share code for collaborative development.  
 Your team repositories have been prepared for you beforehand. Check that you are able to access it using the steps below:
-1. Navigate to Github, specifically the page for eDKP2025. ([link](https://github.com/edkp-2025/))
-2. Sign in with the login credentials provided to you.
-3. A Github repository has been created for each of your teams:
+1. Create your Github account by following the registration instructions on their sign-up page. ([link](https://github.com/signup?source=login))  
+3. Provide the Tech Facilitators with your Github username / email. We have to grant you access to the eDKP2025 Github resources.
+4. After obtaining access, go to the eDKP2025 Github page. ([link](https://github.com/edkp-2025/))
+5. Sign in with your login credentials.
+6. A Github repository has been created for each of your teams:  
 <img src="assets/images/readme-github-repo1.png">  
-4. Click into your team's repository. It should be completely empty.  
-5. We encourage you to rename your repository. Click onto the 'Settings' tab, thereafter change the value in the text field:  
+7. Click into your team's repository. It should be completely empty.  
+8. We encourage you to rename your repository. Click onto the 'Settings' tab, thereafter change the value in the text field:  
 <img src="assets/images/readme-github-repo2.png">
-6. Create different feature branches per member (this helps to manage conflicts when writing to the same files):   
+9. Create different feature branches per member (this helps to manage conflicts when writing to the same files):   
 i. Click on the drop-down under your repository's name that either has 'main' / 'master' (this is your branch selector).  
 ii. Type the name of your new branch to create it.  
 <img src="assets/images/readme-bestpractices-github.png">  
@@ -47,15 +49,19 @@ ii. Type the name of your new branch to create it.
 OpenHands Cloud is a low to no-code AI-assisted coding platform that is accessible as a webapp in your browser. It is integrated tightly with Github, which allows it to seamlessly build your code and merge it to your Github repository. We will be using 'OpenHands' and 'OpenHands Cloud' synonymously.  
 Follow the steps below to access OpenHands:
 1. Navigate to OpenHands Cloud. ([link](https://app.all-hands.dev/))
-2. Sign in with the Github login credentials provided to you.  
+2. Register with your Github login credentials to sync OpenHands Cloud with your Github account.  
 3. There may be a pop-up to grant OpenHands permissions to access the Github account. If it appears, click on the 'Authorize' button.  
-<img src="assets/images/readme-openhands-authgithub.png" width="400" height="500">
+<img src="assets/images/readme-openhands-authgithub.png" height="500">  
 4. If there is a pop-up to accept terms of service, accept it.
-5. Within the 'Open Repository' box, click on the 'user/repo' drop-down selector and choose your Team's repository. Your team's Github repository should already be added to OpenHands:  
+5. At the bottom left of the OpenHands UI, hover your mouse over your user avatar / icon. Click on 'API Keys'.  
+<img src='assets/images/readme-openhands-apikeys.png' height="400">  
+6. In the 'API Keys' settings menu that shows up, follow your Tech Facilitator's instructions on the values to input into the fields to setup your LLM connection. An example is shown below:  
+<img src='assets/images/readme-openhands-anthropic.png' height="500"> 
+7. Within the 'Open Repository' box, click on the 'user/repo' drop-down selector and choose your Team's repository. Your team's Github repository should already be added to OpenHands:  
 <img src="assets/images/readme-openhands-selectrepo.png">  
-6. Click on the 'Select branch...' drop-down selector and choose the feature branch you created. ([see](#1-github)  Setup>Github>Step6)
-7. Click on the 'Launch' button to start your session.
-8. Use the chat interface to start vibe-coding. Refer to the [best practices](#best-practices) section below for tips on how to get the most out of OpenHands Cloud!
+8. Click on the 'Select branch...' drop-down selector and choose the feature branch you created. ([see](#1-github)  Setup>Github>Step6)  
+9. Click on the 'Launch' button to start your session.  
+10. Use the chat interface to start vibe-coding. Refer to the [best practices](#best-practices) section below for tips on how to get the most out of OpenHands Cloud!
 
 > ℹ️ For information on how to use 👐 OpenHands Cloud, please refer to the official [docs](https://docs.all-hands.dev/)
 
