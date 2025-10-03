@@ -59,11 +59,16 @@ Follow the steps below to access OpenHands:
 <img src='assets/images/readme-openhands-apikeys.png' height="400">  
 6. In the 'API Keys' settings menu that shows up, follow your Tech Facilitator's instructions on the values to input into the fields to setup your LLM connection. An example is shown below:  
 <img src='assets/images/readme-openhands-anthropic.png' height="500"> 
-7. Within the 'Open Repository' box, click on the 'user/repo' drop-down selector and choose your Team's repository. Your team's Github repository should already be added to OpenHands:  
+7. Head back to the main page for OpenHands.
+8. Within the 'Open Repository' box, click on the 'user/repo' drop-down selector and choose your Team's repository.  
+i. Your team's Github repository should already be added to OpenHands:  
 <img src="assets/images/readme-openhands-selectrepo.png">  
-8. Click on the 'Select branch...' drop-down selector and choose the feature branch you created. ([see](#1-github)  Setup>Github>Step6)  
-9. Click on the 'Launch' button to start your session.  
-10. Use the chat interface to start vibe-coding. Refer to the [best practices](#best-practices) section below for tips on how to get the most out of OpenHands Cloud!
+ii. Otherwise, click on '+ Add Github Repos'. A new tab should pop-up where you need to select on your Team's repo, then click 'Update access' to grant OpenHands permission to access the repo.  
+<img src="assets/images/readme-openhands-authrepo.png" height="500">  
+9. Head back to the OpenHands main page and you should now be able to select your team's Github repository.
+10. Click on the 'Select branch...' drop-down selector and choose the feature branch you created. ([see](#1-github)  Setup>Github>Step6)  
+11. Click on the 'Launch' button to start your session.  
+12. Use the chat interface to start vibe-coding. Refer to the [best practices](#best-practices) section below for tips on how to get the most out of OpenHands Cloud!
 
 > ℹ️ For information on how to use 👐 OpenHands Cloud, please refer to the official [docs](https://docs.all-hands.dev/)
 
