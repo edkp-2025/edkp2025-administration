@@ -37,7 +37,7 @@ Your team repositories have been prepared for you beforehand. Check that you are
 <img src="assets/images/readme-github-repo1.png">  
 7. Click into your team's repository. It should be completely empty.  
 8. We encourage you to rename your repository. Click onto the 'Settings' tab, thereafter change the value in the text field:  
-<img src="assets/images/readme-github-repo2.png">
+<img src="assets/images/readme-github-repo2.png">  
 9. Create different feature branches per member (this helps to manage conflicts when writing to the same files):   
 i. Click on the drop-down under your repository's name that either has 'main' / 'master' (this is your branch selector).  
 ii. Type the name of your new branch to create it.  
