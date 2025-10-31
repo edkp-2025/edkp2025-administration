@@ -74,7 +74,8 @@ ii. Otherwise, click on '+ Add Github Repos'. A new tab should pop-up where you 
 
 ### 3. Tavily (For news-related team only)
 Tavily is a tool that enables search and extraction of web content, typically for LLM usage.  
-Please reach out to your facilitator for the API key.
+You can setup a 'Free Tier' account that has 1000 credits to start off.
+Should you finish these credits, please reach out to your facilitator an API key.
 
 > ℹ️ For information on how to use Tavily, please refer to the official [docs](https://docs.tavily.com/documentation/api-reference/endpoint/search).
 
@@ -117,33 +118,55 @@ Please reach out to your facilitator for the API key.
 
 
 ### Vibe-Coding using 👐 OpenHands Cloud
-1. Start by telling OpenHands the following in a single prompt:  
-i. instruction to create a plan on how to perform your feature step-by-step.  
-ii. details of your feature.  
-iii. instruction to **NOT** return any code - just return the plan alone.  
-iv. clarify with you at any step if unsure.  
-v. (optional) create test cases to test key functionalities.  
+1. For cost-effectiveness, use [GPT](chatgpt.com) or [Claude](claude.ai) to generate:  
+    i. a Product Requirements Document (PRD). You can insert your own specifications within this sample AI-generated  prompt and use it:
     ```
-    # Example
-    Think step-by-step and create a plan to create a Python FastAPI backend and Streamlit frontend for a RAG app.
+    **Role:**
+    You are a senior product manager tasked with creating a comprehensive Product Requirements Document (PRD). 
+    Based on the inputs provided, generate a well-structured PRD that includes all essential sections.
 
-    The app is expected to allow users to:
-    1. Upload a .pdf document.
-    2. Enter an Anthropic API key for a QnA agent to chat about the document.
-    3. Chat with an agent about the document via a chat interface.
-    4. Delete the document.
+    **User Inputs:**
+    User Story Narrative: [Insert detailed user journey/story describing the problem, context, and desired outcome]
+    Feature Descriptions: [Insert specific feature details, capabilities, and functionality]
+    Include Testing: [Yes/No]
 
-    Under the hood, the app should:
-    1. Parse the document and convert it into embeddings.
-    2. Store embeddings in a local instance of a vector store.
-    3. Rank the best results post-retrieval.
-    4. Connect to an Anthropic LLM endpoint (Sonnet 4) for QnA.
+    **Task**
+    Generate a PRD with the following structure:
 
-    Feel free to suggest the best vector store and ranking algorithm for my app.
-    Only create a to-do list for planning - DO NOT return any code.
-    Ask me questions if you require any clarifications.
+    Executive Summary - Brief overview and business rationale  
+    Problem Statement - Clear definition of the problem being solved  
+    User Personas & Use Cases - Target users and their scenarios   
+    Feature Requirements - Detailed functional specifications  
+    User Experience Requirements - UX/UI considerations  
+    Technical Requirements - Product app is expected to run using 4 CPU and 16Gb RAM.  
+    [If testing selected] Testing Strategy - Test scenarios, acceptance criteria, and validation approach  
+    ```  
+  
+    ii. a checklist execution plan. You can insert your own specifications within this sample prompt and use it:
     ```
-2. After the plan is created and is within your chat history, go ahead and tell OpenHands to execute the plan. You may opt to tell it not to overcomplicate things and keep code logic as simple as possible.
+    **Task**
+    Based on the PRD below, create an execution plan for my AI developer agent in the form of a checklist:
+
+    **PRD**
+    [Copy-Paste your AI-generated PRD here]
+    ```  
+2. Go to OpenHands and copy paste your PRD and Execution Plan into a chat under your feature branch:
+    ```
+    **Task**
+    I want to create my app based on the PRD and Execution Plan below.
+    Review these documents and develop my app.
+
+    **IMPORTANT**
+    1. Keep the code as simple as possible without overcomplicating things.
+    2. Clarify with me if you have any questions or doubts. You ABSOLUTELY must not make any assumptions on your own.
+    3. Any use of API calls should be hyperparameterised either by using a config.yaml file OR by exposing a user input field in the Front-End UI.
+
+    **PRD**
+    [Copy-Paste PRD here]
+
+    **Execution Plan**
+    [Copy-Paste Execution Plan here]
+    ```
 3. You can review the code generated under the 'Changes' tab in OpenHands - changes are organized by the files they are written in. Thereafter, you can get OpenHands to run unit / integration tests, and fix any bugs.
 4. Save your work frequently using the 'Push' and 'Pull Request' buttons at the bottom of your chatbox:  
     <img src="assets/images/readme-openhands-pushmerge.png">  
