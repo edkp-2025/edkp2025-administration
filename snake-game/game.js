@@ -14,6 +14,7 @@ let dy = 0;
 let score = 0;
 let gameRunning = false;
 let gameLoop = null;
+let gamePaused = false;
 
 // DOM elements
 const scoreElement = document.getElementById('score');
@@ -82,7 +83,7 @@ function drawGame() {
 }
 
 function updateGame() {
-    if (!gameRunning || dx === 0 && dy === 0) return;
+    if (!gameRunning || gamePaused || (dx === 0 && dy === 0)) return;
     
     const head = {x: snake[0].x + dx, y: snake[0].y + dy};
     
@@ -92,9 +93,9 @@ function updateGame() {
         return;
     }
     
-    // Check self collision
-    for (let segment of snake) {
-        if (head.x === segment.x && head.y === segment.y) {
+    // Check self collision (but not with the head itself)
+    for (let i = 0; i < snake.length; i++) {
+        if (head.x === snake[i].x && head.y === snake[i].y) {
             gameOver();
             return;
         }
